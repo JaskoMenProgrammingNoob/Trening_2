@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Xml.Schema;
 
 class Program
@@ -6,13 +7,26 @@ class Program
     static void Main(string[] args)
     {
         int suma = 0;
+        int x = 1;
+        do 
+        {
+             
+                x++;
+            suma = suma + x;
+            
+        } while (x <= 100);
+        Console.WriteLine($"suma = {suma}");
+
+
+        /*
+        int suma = 0;
         for (int x = 1; x <= 100; x++ )
         {
             suma = suma + x;
             
 
         }
-        Console.Write($" suma = {suma}");
+        Console.Write($" suma = {suma}"); */
 
 
 
@@ -122,5 +136,5 @@ class Program
             Console.WriteLine($"Wartość funkcji y dla x = {x} to {y}");
         }
        */
-        }
+    }
     }
