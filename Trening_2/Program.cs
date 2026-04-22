@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
 using System.Xml.Schema;
 
 class Program
@@ -7,6 +8,34 @@ class Program
     static void Main(string[] args)
     {
         int suma = 0;
+        for (int i = 2; i <= 100; i++)
+        {
+            
+            if (i % 2 == 0)
+            {
+                suma = suma + i;
+                
+            }
+            
+        }
+        Console.WriteLine($"Suma liczb parzystych do 100 włącznie to: {suma} ");
+
+
+
+
+        /* int suma = 0;
+        int x = 1;
+        while (x <= 100)
+        {
+            x++;
+            suma = suma + x;
+        }
+        Console.WriteLine($"Suma = {suma}"); */
+
+
+
+
+        /* int suma = 0;
         int x = 1;
         do 
         {
@@ -15,7 +44,7 @@ class Program
             suma = suma + x;
             
         } while (x <= 100);
-        Console.WriteLine($"suma = {suma}");
+        Console.WriteLine($"suma = {suma}"); */
 
 
         /*
