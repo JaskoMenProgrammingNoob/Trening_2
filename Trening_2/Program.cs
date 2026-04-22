@@ -8,7 +8,37 @@ class Program
     static void Main(string[] args)
     {
         int suma = 0;
-        for (int i = 2; i <= 100; i++)
+        int i = 0;
+        
+        while (i <= 100)
+        {
+            i++;
+            if (i % 2 == 0)
+            {
+                suma = suma + i;
+            }
+        }
+        Console.WriteLine($"Suma liczb to {suma}");
+        
+        
+        
+        
+        /* do
+        {
+            i++;
+            if (i % 2 == 0)
+            {
+                suma = suma + i;
+            }
+
+        } while (i <= 100);
+        Console.WriteLine($"Suma to: {suma}"); */
+        
+        
+        
+        
+        /* 
+         for (int i = 2; i <= 100; i++)
         {
             
             if (i % 2 == 0)
@@ -18,7 +48,7 @@ class Program
             }
             
         }
-        Console.WriteLine($"Suma liczb parzystych do 100 włącznie to: {suma} ");
+        Console.WriteLine($"Suma liczb parzystych do 100 włącznie to: {suma} "); */
 
 
 
