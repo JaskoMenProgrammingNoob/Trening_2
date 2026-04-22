@@ -7,7 +7,76 @@ class Program
 {
     static void Main(string[] args)
     {
-        int suma = 0;
+        
+        Random los = new Random();
+        int losowa;
+        for (int i = 1; i <= 5; i++)
+        {
+            
+            losowa = los.Next(0,100);
+            
+            Console.WriteLine($"Losowa liczba to: {losowa}");
+        }
+        
+        
+        
+        /* int suma = 0;
+        int i = 1;
+        do
+        {
+            if (!(i % 2 == 0))
+            {
+                suma = suma + i;
+            }
+            i++;
+        } while ( i <= 100);
+        Console.WriteLine($"Suma liczb nieparzystych do 100 włącznie to: {suma} "); */
+
+
+
+        /* int suma = 0;
+        int i = 1;
+        while (i <= 100)
+        {
+            
+
+            if (!(i % 2 == 0))
+               
+            {
+                
+                suma = suma + i;
+                
+            }
+            i++;
+        }
+            Console.WriteLine($"Suma: {suma}"); */
+
+
+
+
+
+
+        /* ! oznacza negację, czyli zaprzeczenie warunku, który jest w nawiasie. W tym przypadku, jeśli i jest parzyste (i % 2 == 0), to ! (i % 2 == 0) będzie fałszywe, a jeśli i jest nieparzyste, to ! (i % 2 == 0) będzie prawdziwe. */
+        /* int suma = 0;
+        for (int i = 1; i <= 100; i++)
+        {
+
+            if (! (i % 2 == 0))
+            {
+                suma = suma + i; 
+
+            } 
+
+        }
+        Console.WriteLine($"Suma liczb nieparzystych do 100 włącznie to: {suma} "); */
+
+
+
+
+
+
+        /* 
+         int suma = 0;
         int i = 0;
         
         while (i <= 100)
@@ -18,11 +87,11 @@ class Program
                 suma = suma + i;
             }
         }
-        Console.WriteLine($"Suma liczb to {suma}");
-        
-        
-        
-        
+        Console.WriteLine($"Suma liczb to {suma}"); */
+
+
+
+
         /* do
         {
             i++;
@@ -33,10 +102,10 @@ class Program
 
         } while (i <= 100);
         Console.WriteLine($"Suma to: {suma}"); */
-        
-        
-        
-        
+
+
+
+
         /* 
          for (int i = 2; i <= 100; i++)
         {
@@ -196,4 +265,4 @@ class Program
         }
        */
     }
-    }
+}
