@@ -9,17 +9,47 @@ class Program
     {
         
         Random los = new Random();
-        int losowa;
+        double losowa = 0;
+        double srednia;
+        double suma = 0;
+        double min = 0;
+        double max = 0;
         for (int i = 1; i <= 5; i++)
         {
             
             losowa = los.Next(0,100);
-            
+           
             Console.WriteLine($"Losowa liczba to: {losowa}");
+            suma += losowa;
+            if (i == 1)
+            {
+                 min = losowa;
+                 max = losowa;
+            } 
+            else if (losowa < min)
+            {
+                min = losowa;
+                
+            } 
+            else if (losowa > max)
+            {
+                max = losowa;
+                
+            }
+
+             
+
         }
-        
-        
-        
+        Console.WriteLine($"Suma: {suma}");
+        srednia = suma / 5;
+        Console.WriteLine($"Średnia wylosowanych liczb to: {srednia}");
+        Console.WriteLine($"Max: {max}");
+        Console.WriteLine($"Min: {min}");
+
+
+
+
+
         /* int suma = 0;
         int i = 1;
         do
